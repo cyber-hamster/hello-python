@@ -64,8 +64,9 @@ encoded_string = ""
 
 for c in ustring:
     element_counter = 0
+    if c == " ":
+        encoded_string += " "
     for element in standard:
-
         # print("element_counter is: ",element_counter)
         if c == temp_list[element_counter]:
             # print("Found a ", temp_list[element_counter], "at element number ", element_counter)
